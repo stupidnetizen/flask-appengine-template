@@ -1,7 +1,9 @@
 # Development environment pip requirements file
 # Install via 'pip install -r requirements_dev.txt'
 
-PIL
+#PIL
+Pillow
 jinja2
 simplejson
 unittest2
+flask_triangle
