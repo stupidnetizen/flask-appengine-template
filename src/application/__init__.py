@@ -5,9 +5,11 @@ Initialize Flask app
 from flask import Flask
 import os
 from flask_debugtoolbar import DebugToolbarExtension
+from flask.ext.triangle import Triangle
 from werkzeug.debug import DebuggedApplication
 
 app = Flask('application')
+Triangle(app)
 
 if os.getenv('FLASK_CONF') == 'DEV':
 	#development settings n

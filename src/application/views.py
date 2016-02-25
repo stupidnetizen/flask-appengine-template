@@ -33,6 +33,9 @@ def say_hello(username):
     """Contrived example to demonstrate Flask's url routing capabilities"""
     return 'Hello %s' % username
 
+def ng_examples():
+    """ starting examples of angular with flask_appengine"""
+    return render_template('ng_examples.html')
 
 @login_required
 def list_examples():

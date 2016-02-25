@@ -21,6 +21,9 @@ app.add_url_rule('/', 'home', view_func=views.home)
 # Say hello
 app.add_url_rule('/hello/<username>', 'say_hello', view_func=views.say_hello)
 
+# Examples from angular by Google and git hub objects
+app.add_url_rule('/ng_examples', 'ng_examples', view_func=views.ng_examples)
+
 # Examples list page
 app.add_url_rule('/examples', 'list_examples', view_func=views.list_examples, methods=['GET', 'POST'])
 

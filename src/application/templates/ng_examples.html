@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h3>Angular Flask Triangle Example</h3>
+
+    <div ng-app>
+        <label>Name:</label>
+            <input type="text" data-ng-model="yourName" placeholder="Enter a name here">
+         <hr>
+        <p>Hello {{yourName|angular}}!</p>
+    <div>
+
+    <script src="{{ url_for('static', filename='js/ng/angular.js')}}"></script>
+
+{% endblock content %}
